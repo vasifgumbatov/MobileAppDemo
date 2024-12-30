@@ -48,7 +48,7 @@ class SignInFragment : CoreFragment<FragmentSignInBinding>() {
         when {
             !isValidEmail(email) -> binding?.inputTextSignIn?.error = "Invalid email format"
             password.length < 4 -> binding?.inputPasswordSignIn?.error = "Password must be at least 4 characters"
-            email == "test@te.st" && password == "1234" -> navigateToMain()
+            email == "test@te.st" && password == "1234" -> navigateToExample()
             else -> {
                 binding?.inputTextSignIn?.error = "Invalid email or password"
                 binding?.inputPasswordSignIn?.error = "Invalid email or password"
@@ -56,10 +56,8 @@ class SignInFragment : CoreFragment<FragmentSignInBinding>() {
         }
     }
 
-    private fun navigateToMain() {
-        val intent = Intent(requireContext(), MainActivity::class.java)
-        startActivity(intent)
-        requireActivity().finish()
+    private fun navigateToExample() {
+        findNavController().navigate(R.id.action_signInFragment_to_exampleFragment)
     }
 
     private fun isValidEmail(email: String): Boolean {
