@@ -1,11 +1,13 @@
 package com.vasifgumbatov.newapplication.ui.signinscreen
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.vasifgumbatov.newapplication.MainActivity
 import com.vasifgumbatov.newapplication.R
 import com.vasifgumbatov.newapplication.databinding.FragmentSignInBinding
 import com.vasifgumbatov.newapplication.ui.core.CoreFragment
