@@ -18,5 +18,13 @@
         <action
             android:id="@+id/action_signInFragment_to_createAccountFragment"
             app:destination="@id/createAccountFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_exampleFragment"
+            app:destination="@id/exampleFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/exampleFragment"
+        android:name="com.vasifgumbatov.newapplication.ui.examplescreen.ExampleFragment"
+        android:label="fragment_example"
+        tools:layout="@layout/fragment_example" />
 </navigation>
