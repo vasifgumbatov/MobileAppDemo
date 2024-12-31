@@ -22,4 +22,6 @@
     <string name="conditions">Conditions.</string>
     <string name="already_a_member">Already a member?</string>
     <string name="login_in">Login In</string>
+    <string name="like">Like</string>
+    <string name="share">Share</string>
 </resources>
