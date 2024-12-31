@@ -12,6 +12,7 @@ activity = "1.9.3"
 constraintlayout = "2.2.0"
 navigationFragmentKtx = "2.8.5"
 navigationUiKtx = "2.8.5"
+junit = "4.12"
 #testng = "6.9.6"
 
 [libraries]
@@ -28,6 +29,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 # Navigation
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
 #testng = { group = "org.testng", name = "testng", version.ref = "testng" }
 
 [plugins]

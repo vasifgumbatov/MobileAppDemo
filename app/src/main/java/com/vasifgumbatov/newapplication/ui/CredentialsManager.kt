@@ -21,4 +21,16 @@ object CredentialsManager {
         Log.d("CredentialsManager", "Login attempt for $email: $isValid")
         return isValid
     }
+
+    // 11.11.24 task test code for check correct or wrong mail and password
+
+    fun isEmailValid(email: String): Boolean {
+        if (email.isBlank()) return false
+        val emailRegex = "^[\\w._%+-]+@[\\w.-]+\\.[a-zA-Z]{2,}\$".toRegex()
+        return emailRegex.matches(email)
+    }
+
+    fun isPasswordValid(password: String): Boolean {
+        return password.isNotBlank()
+    }
 }
